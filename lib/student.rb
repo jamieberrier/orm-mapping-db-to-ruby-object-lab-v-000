@@ -71,7 +71,8 @@ class Student
       self.new_from_db(row)
     end
     #binding.pry
-    array.select { |student| student.grade == x }
+    array.select! { |student| student.grade == x }
+    array
   end
 
   def self.all
