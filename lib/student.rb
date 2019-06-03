@@ -45,7 +45,7 @@ class Student
 
     DB[:conn].execute(sql).map do |row|
       self.new_from_db(row)
-    end.slice!(x)
+    end.slice!(1, x)
 
   end
 
