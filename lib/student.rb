@@ -70,9 +70,8 @@ class Student
     array = DB[:conn].execute(sql).map do |row|
       self.new_from_db(row)
     end
-    binding.pry
-    #array.select { |student| @grade == x }
     #binding.pry
+    array.select { |student| student.grade == x }
   end
 
   def self.all
