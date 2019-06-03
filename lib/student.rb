@@ -73,6 +73,8 @@ class Student
     end
     # remove students not in grade x from array
     # select! { || }
+    # reject
+    # delete_if
   end
 
   def self.all
