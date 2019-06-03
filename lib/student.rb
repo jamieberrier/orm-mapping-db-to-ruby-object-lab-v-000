@@ -72,6 +72,7 @@ class Student
       self.new_from_db(row)
     end
     # remove students not in grade x from array
+    
   end
 
   def self.all
