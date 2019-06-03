@@ -64,7 +64,9 @@ class Student
   def self.all_students_in_grade_X(x)
     array = self.all
     binding.pry
-    array.select { |student| student.grade == x }
+    array.select { |student|
+      binding.pry
+      student.grade == x }
   end
 
   def self.all
