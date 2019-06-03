@@ -71,7 +71,7 @@ class Student
       self.new_from_db(row)
     end
     binding.pry
-    array.reject! { || }
+    array.reject! { |student| }
   end
 
   def self.all
