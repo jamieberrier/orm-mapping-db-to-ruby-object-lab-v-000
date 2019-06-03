@@ -74,7 +74,7 @@ class Student
     # remove students not in grade x from array
     # select! { || }
     # reject
-    # delete_if
+    # delete_if { |:grade| :grade != x}
   end
 
   def self.all
