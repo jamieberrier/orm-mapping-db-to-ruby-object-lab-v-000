@@ -70,7 +70,7 @@ class Student
     array = DB[:conn].execute(sql).map do |row|
       self.new_from_db(row)
     end
-    binding.pry
+    #binding.pry
     array.reject! { |student| student.grade != x }
   end
 
