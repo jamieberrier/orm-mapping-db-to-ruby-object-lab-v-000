@@ -40,7 +40,7 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE 
+      WHERE
     SQL
 
     DB[:conn].execute(sql).map do |row|
