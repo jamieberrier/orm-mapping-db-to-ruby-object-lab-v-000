@@ -71,7 +71,7 @@ class Student
       self.new_from_db(row)
     end
     #binding.pry
-    new_array = array.select { |student| student.grade == x }
+    new_array = array.select{ |student| student.grade == x }
     new_array
   end
 
