@@ -62,7 +62,7 @@ class Student
   end
 
   def self.all_students_in_grade_X(x)
-    self.all
+    array = self.all
   end
 
   def self.all
