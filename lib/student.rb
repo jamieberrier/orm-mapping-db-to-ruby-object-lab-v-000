@@ -69,7 +69,7 @@ class Student
 
     DB[:conn].execute(sql).map do |row|
       self.new_from_db(row)
-    end.select! { |grade| grade == x}
+    end.reject! { |grade| grade == x}
     # remove students not in grade x from array
     # select! { || }
     # reject
