@@ -72,7 +72,7 @@ class Student
     end
     binding.pry
     new_array = array.select{ |student| student.grade == x }
-    # array.select!{ |student| @grade == x }
+    # array.select{ |student| @grade == x }
     new_array
   end
 
