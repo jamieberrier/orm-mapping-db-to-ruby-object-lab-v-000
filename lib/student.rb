@@ -62,9 +62,7 @@ class Student
   end
 
   def self.all_students_in_grade_X(x)
-    array = self.all
-    #binding.pry
-    array.select { |student| student.grade == x.to_s }
+    self.all.select { |student| student.grade == x.to_s }
   end
 
   def self.all
