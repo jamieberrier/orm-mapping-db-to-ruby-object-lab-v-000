@@ -71,7 +71,7 @@ class Student
     DB[:conn].execute(sql).map do |row|
       self.new_from_db(row)
     end
-    # remove students n ot in grade x
+    # remove students not in grade x from array
   end
 
   def self.all
