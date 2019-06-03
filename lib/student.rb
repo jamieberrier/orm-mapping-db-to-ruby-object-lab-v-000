@@ -53,7 +53,7 @@ class Student
       SELECT *
       FROM students
       WHERE grade = "10"
-      GRPUP BY id
+      GROUP BY id
       LIMIT 1
     SQL
 
