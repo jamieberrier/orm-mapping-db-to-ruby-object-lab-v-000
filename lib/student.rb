@@ -66,7 +66,7 @@ class Student
     #binding.pry
     array.select { |student|
       binding.pry
-      student.grade == x }
+      student.grade == "x" }
   end
 
   def self.all
