@@ -53,7 +53,6 @@ class Student
       SELECT *
       FROM students
       WHERE grade = "10"
-      GROUP BY id
       LIMIT 1
     SQL
 
